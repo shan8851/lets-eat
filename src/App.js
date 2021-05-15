@@ -35,7 +35,7 @@ function App() {
               <SignupContainer>
                 <Input
                   type="text"
-                  placeholder="Enter your email address for some tasty treats"
+                  placeholder="Sign up for some tasty treats!"
                   aria-label="Email input"
                   key="email"
                   name="email"
@@ -64,32 +64,36 @@ export default App;
 
 const Container = styled.div`
   margin: 0;
-  padding: 0 20px;
   background-color: #293250;
-  height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
 `;
 
 const HeaderLogo = styled.img`
   width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 const Tagline = styled.h1`
   color: #26d07c;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 const SignupContainer = styled.div`
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 const Input = styled.input`
-  min-width: 300px;
-  padding: 20px;
+  padding: 20px 30px;
   border: 3px solid #ffd55a;
   background-color: #ffd55a;
   border-radius: 30px;
