@@ -1,7 +1,7 @@
 export const breakpoints = {
   mobile: "480px",
   tablet: "768px",
-  extraLarge: "1600px",
+  extraLarge: "1050px",
 };
 
 export const colors = {

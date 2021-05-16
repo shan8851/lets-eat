@@ -28,6 +28,10 @@ export const HeaderBar = styled.div`
   @media (max-width: ${breakpoints.tablet}) {
     min-height: 200px;
   }
+
+  @media (min-width: ${breakpoints.extraLarge}) {
+    min-height: 400px;
+  }
 `;
 
 export const Logo = styled.img`
