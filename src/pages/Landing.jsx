@@ -126,14 +126,18 @@ const SignupButton = styled.button`
 `;
 
 const ErrorText = styled.p`
-  font-size: 24px;
-  color: #fff;
-  font-weight: 800;
+  font-size: 20px;
+  color: ${colors.white};
+  font-weight: 400;
+    font-weight: 400;
+  text-align: center'
 `;
 
 const Success = styled.h2`
-  font-size: 24px;
-  color: #fff;
+  font-size: 20px;
+  color: ${colors.white};
+  font-weight: 400;
+  text-align: center;
 `;
 
 const NavRow = styled.div`
