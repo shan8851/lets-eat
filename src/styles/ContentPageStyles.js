@@ -5,8 +5,6 @@ import { breakpoints, colors } from "../helpers/globals";
 import { FaArrowUp } from "react-icons/fa";
 
 export const Container = styled.div`
-  /* background-image: url(${StripImage});
-  background-repeat: no-repeat; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
