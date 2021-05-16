@@ -153,8 +153,8 @@ export const Privacy = () => {
           </ExternalLink>
         </Copy>
         <Copy>
-          Post: G07, Boho 5 Bridge Street East, Middlesbrough, United Kingdom,
-          TS2 1NY
+          Post: Suite G07, Boho 5 Bridge Street East, Middlesbrough, United
+          Kingdom, TS2 1NY
         </Copy>
       </Content>
     </Container>
