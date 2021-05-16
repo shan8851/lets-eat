@@ -13,6 +13,7 @@ import {
   Copy,
   SubHeading,
   ExternalLink,
+  HeaderBar,
 } from "../styles/ContentPageStyles";
 
 export const Privacy = () => {
@@ -21,16 +22,18 @@ export const Privacy = () => {
   };
   return (
     <Container>
+      <HeaderBar>
+        <Logo src={YellowLogo} />
+      </HeaderBar>
       <ToTop onClick={scrollToTop}>
         <ArrowIcon />
         <ToTopText>Scroll to top</ToTopText>
       </ToTop>
-      <NavRow>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/terms">Terms</NavLink>
-      </NavRow>
-      <Logo src={YellowLogo} />
       <Content>
+        <NavRow>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/terms">Terms</NavLink>
+        </NavRow>
         <PageHeading>Privacy Policy</PageHeading>
         <Copy>
           Here at Let’s Eat we understand privacy is important to you and that

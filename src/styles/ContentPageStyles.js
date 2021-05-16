@@ -5,8 +5,8 @@ import { breakpoints, colors } from "../helpers/globals";
 import { FaArrowUp } from "react-icons/fa";
 
 export const Container = styled.div`
-  background-image: url(${StripImage});
-  background-repeat: no-repeat;
+  /* background-image: url(${StripImage});
+  background-repeat: no-repeat; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,31 +14,40 @@ export const Container = styled.div`
   position: relative;
 `;
 
-export const Logo = styled.img`
-  max-width: 150px;
-  margin: 0 auto 0 auto;
-  padding: 20px 0 50px 0;
-  @media (min-width: ${breakpoints.tablet}) {
-    max-width: 300px;
-    padding: 80px 0 300px 0;
+export const HeaderBar = styled.div`
+  background-image: url(${StripImage});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100vw;
+  min-height: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    min-height: 200px;
   }
-  @media (min-width: ${breakpoints.extraLarge}) {
-    max-width: 350px;
-    padding: 80px 0 400px 0;
+`;
+
+export const Logo = styled.img`
+  max-width: 250px;
+  margin: 0 auto 0 auto;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 150px;
   }
 `;
 
 export const NavRow = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
 `;
 
 export const NavLink = styled(Link)`
   font-weight: 400;
   color: #293250;
   font-size: 16px;
+  padding-right: 10px;
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 22px;
   }

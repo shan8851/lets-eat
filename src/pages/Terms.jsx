@@ -13,6 +13,7 @@ import {
   Copy,
   SubHeading,
   InternalLink,
+  HeaderBar,
 } from "../styles/ContentPageStyles";
 
 export const Terms = () => {
@@ -21,16 +22,18 @@ export const Terms = () => {
   };
   return (
     <Container>
+      <HeaderBar>
+        <Logo src={YellowLogo} />
+      </HeaderBar>
       <ToTop onClick={scrollToTop}>
         <ArrowIcon />
         <ToTopText>Scroll to top</ToTopText>
       </ToTop>
-      <NavRow>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/terms">Privacy</NavLink>
-      </NavRow>
-      <Logo src={YellowLogo} />
       <Content>
+        <NavRow>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/terms">Privacy</NavLink>
+        </NavRow>
         <PageHeading>Terms & Conditions</PageHeading>
         <Copy>
           This page (together with our Privacy Policy) sets out the terms and
