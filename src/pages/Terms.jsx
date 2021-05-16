@@ -12,7 +12,6 @@ import {
   Content,
   Copy,
   SubHeading,
-  ExternalLink,
   InternalLink,
 } from "../styles/ContentPageStyles";
 
