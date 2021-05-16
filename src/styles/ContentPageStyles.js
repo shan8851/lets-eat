@@ -22,6 +22,10 @@ export const Logo = styled.img`
     max-width: 300px;
     padding: 80px 0 300px 0;
   }
+  @media (min-width: ${breakpoints.extraLarge}) {
+    max-width: 350px;
+    padding: 80px 0 400px 0;
+  }
 `;
 
 export const NavRow = styled.div`

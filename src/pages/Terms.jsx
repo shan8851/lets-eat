@@ -34,7 +34,7 @@ export const Terms = () => {
         <PageHeading>Terms & Conditions</PageHeading>
         <Copy>
           This page (together with our Privacy Policy) sets out the terms and
-          conditions on which we, MCS Tech LTD t/a Just Eat provide access to
+          conditions on which we, MCS Tech LTD t/a Lets Eat provide access to
           our website{" "}
           <InternalLink to="/">https://www.letseat.co.uk</InternalLink> and any
           mobile applications operated by Let’s Eat. Please read these terms
