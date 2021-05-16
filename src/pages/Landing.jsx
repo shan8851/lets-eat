@@ -126,13 +126,13 @@ const SignupButton = styled.button`
 `;
 
 const ErrorText = styled.p`
-  font-size: 32px;
+  font-size: 24px;
   color: #fff;
   font-weight: 800;
 `;
 
 const Success = styled.h2`
-  font-size: 32px;
+  font-size: 24px;
   color: #fff;
 `;
 
