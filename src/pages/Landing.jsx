@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import Logo from "./assets/images/Lets Eat Primary Logo Blue.svg";
+import Logo from "../assets/images/BlueLogo.svg";
 import styled from "styled-components";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-import LoadingSpinner from "./LoadingSpinner";
+import { LoadingSpinner } from "../components/LoadingSpinner";
+import { Link } from "react-router-dom";
+import { colors } from "../helpers/globals";
 
-function App() {
+export const Landing = () => {
   const url =
     "https://letseat.us1.list-manage.com/subscribe/post?u=0e4342b2c9e594be5b35133a6&amp;id=a59e5b75f0";
   const [email, setEmail] = useState(null);
@@ -35,7 +37,7 @@ function App() {
               <SignupContainer>
                 <Input
                   type="text"
-                  placeholder="Sign up for some tasty treats!"
+                  placeholder="Enter your email for exclusive offers"
                   aria-label="Email input"
                   key="email"
                   name="email"
@@ -48,6 +50,10 @@ function App() {
                 >
                   Sign Up
                 </SignupButton>
+                <NavRow>
+                  <NavLink to="/privacy">Privacy</NavLink>
+                  <NavLink to="/terms">Terms</NavLink>
+                </NavRow>
 
                 {error && <ErrorText>{errorMessage}</ErrorText>}
               </SignupContainer>
@@ -58,13 +64,12 @@ function App() {
       {signedUp && <Success>Thank for signing up, we'll be in touch.</Success>}
     </Container>
   );
-}
-
-export default App;
+};
 
 const Container = styled.div`
   margin: 0;
-  background-color: #293250;
+  padding: 10px;
+  background-color: ${colors.blue};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,49 +79,44 @@ const Container = styled.div`
 
 const HeaderLogo = styled.img`
   width: 250px;
-  padding-left: 10px;
-  padding-right: 10px;
 `;
 
-const Tagline = styled.h1`
+const Tagline = styled.p`
   color: #26d07c;
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 24px;
 `;
 
 const SignupContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;
 `;
 
 const Input = styled.input`
-  padding: 20px 30px;
-  border: 3px solid #ffd55a;
-  background-color: #ffd55a;
+  padding: 10px 30px;
+  min-width: 300px;
+  border: 3px solid ${colors.yellow};
+  background-color: ${colors.yellow};
   border-radius: 30px;
-  color: #293250;
+  color: ${colors.blue};
   font-weight: 800;
   ::placeholder {
-    color: #293250;
+    color: ${colors.blue};
+    font-weight: 400;
   }
 `;
 
 const SignupButton = styled.button`
-  width: fit-content;
   margin: auto;
+  width: 100%;
   background: none;
   border: none;
   cursor: pointer;
-  color: #26d07c;
+  color: ${colors.green};
   margin-top: 20px;
-  font-size: 32px;
+  font-size: 24px;
   padding-bottom: 10px;
-  :hover {
-    border-bottom: 3px solid #26d07c;
-  }
+  text-decoration: underline;
   :focus {
     outline: none;
   }
@@ -134,4 +134,15 @@ const ErrorText = styled.p`
 const Success = styled.h2`
   font-size: 32px;
   color: #fff;
+`;
+
+const NavRow = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const NavLink = styled(Link)`
+  color: ${colors.yellow};
+  font-weight: 800;
+  padding: 10px;
 `;

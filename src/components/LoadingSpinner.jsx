@@ -1,6 +1,6 @@
-import "./styles/spinner.css";
+import "../styles/spinner.css";
 
-export default function LoadingSpinner() {
+export const LoadingSpinner = () => {
   return (
     <div class="lds-roller">
       <div></div>
@@ -13,4 +13,4 @@ export default function LoadingSpinner() {
       <div></div>
     </div>
   );
-}
+};
