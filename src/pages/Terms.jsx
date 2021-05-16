@@ -77,7 +77,7 @@ export const Terms = () => {
           activate the discount (i.e you cannot use 900 points for £9.00 worth
           of discount). The same rules apply for any subsequent points earned.
           Discounts can only be activated one a 1000 point “block” has been
-          earnt.
+          earned.
         </Copy>
         <Copy>
           Let’s Eat from time to time will run promotional campaigns where you
