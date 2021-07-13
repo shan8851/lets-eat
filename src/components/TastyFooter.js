@@ -2,6 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { colors, breakpoints } from "../helpers/globals";
 import { FaPhoneAlt, FaRegEnvelope, FaGlobe } from "react-icons/fa";
+import {
+  AiOutlineTwitter,
+  AiFillFacebook,
+  AiFillLinkedin,
+  AiOutlineInstagram,
+} from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 export const TastyFooter = () => {
@@ -19,15 +25,45 @@ export const TastyFooter = () => {
           </ContactInfo>
         </Row>
       </Col>
-      <SignUpButton>Get Started</SignUpButton>
+      <SignUpButton to="/">Get Started</SignUpButton>
       <Col>
         <Row>
           <FaGlobe size={22} />
           <ContactLink to="/">www.letseat.co.uk</ContactLink>
         </Row>
+
         <Row>
-          <FaRegEnvelope size={22} />
-          <ContactInfo>info@letseat.co.uk</ContactInfo>
+          <SocialBlock>
+            FIND US ON |{" "}
+            <SocialLink
+              href="https://www.facebook.com/uk.lets.eat"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillFacebook size={22} />
+            </SocialLink>{" "}
+            <SocialLink
+              href="https://www.linkedin.com/company/lets-eat-uk/?viewAsMember=true"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillLinkedin size={22} />
+            </SocialLink>{" "}
+            <SocialLink
+              href="https://twitter.com/Lets_Eat_UK"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiOutlineTwitter size={22} />
+            </SocialLink>{" "}
+            <SocialLink
+              href="https://www.instagram.com/lets.eat.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiOutlineInstagram size={22} />
+            </SocialLink>{" "}
+          </SocialBlock>
         </Row>
       </Col>
       <MobileLinks>
@@ -46,8 +82,37 @@ export const TastyFooter = () => {
           <ContactLink to="/">www.letseat.co.uk</ContactLink>
         </Row>
         <Row>
-          <FaRegEnvelope size={20} />
-          <ContactInfo>info@letseat.co.uk</ContactInfo>
+          <SocialBlock>
+            FIND US ON |{" "}
+            <SocialLink
+              href="https://www.facebook.com/uk.lets.eat"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillFacebook size={22} />
+            </SocialLink>{" "}
+            <SocialLink
+              href="https://www.linkedin.com/company/lets-eat-uk/?viewAsMember=true"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillLinkedin size={22} />
+            </SocialLink>{" "}
+            <SocialLink
+              href="https://twitter.com/Lets_Eat_UK"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiOutlineTwitter size={22} />
+            </SocialLink>{" "}
+            <SocialLink
+              href="https://www.instagram.com/lets.eat.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiOutlineInstagram size={22} />
+            </SocialLink>{" "}
+          </SocialBlock>
         </Row>
       </MobileLinks>
     </Container>
@@ -102,6 +167,21 @@ const ContactInfo = styled.a`
   }
 `;
 
+const SocialBlock = styled.p`
+  margin: 0 0 0 8px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: ${colors.blue};
+  display: flex;
+  align-items: center;
+`;
+
+const SocialLink = styled.a`
+  color: ${colors.blue};
+  margin: 0;
+`;
+
 const ContactLink = styled(Link)`
   margin: 0 0 0 8px;
   font-size: 18px;
@@ -113,13 +193,16 @@ const ContactLink = styled(Link)`
   }
 `;
 
-const SignUpButton = styled.button`
+const SignUpButton = styled(Link)`
   background-color: ${colors.blue};
   color: ${colors.yellow};
   border: 1px solid ${colors.blue};
   font-size: 20px;
   border-radius: 32px;
   padding: 16px 64px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 800;
 
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 16px;
@@ -133,5 +216,6 @@ const MobileLinks = styled.div`
     flex-direction: column;
     padding: 24px;
     justify-content: center;
+    align-items: center;
   }
 `;
