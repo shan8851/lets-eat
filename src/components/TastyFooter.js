@@ -165,6 +165,10 @@ const ContactInfo = styled.a`
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 14px;
   }
+
+  :hover {
+    text-decoration: underline;
+  }
 `;
 
 const SocialBlock = styled.p`
@@ -180,6 +184,9 @@ const SocialBlock = styled.p`
 const SocialLink = styled.a`
   color: ${colors.blue};
   margin: 0;
+  :hover {
+    color: ${colors.green};
+  }
 `;
 
 const ContactLink = styled(Link)`
@@ -188,6 +195,9 @@ const ContactLink = styled(Link)`
   font-weight: bold;
   text-decoration: none;
   color: ${colors.blue};
+  :hover {
+    text-decoration: underline;
+  }
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 14px;
   }
@@ -203,6 +213,12 @@ const SignUpButton = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   font-weight: 800;
+
+  :hover {
+    -webkit-box-shadow: 5px 5px 7px 1px rgba(41, 50, 80, 0.53);
+    box-shadow: 5px 5px 7px 1px rgba(41, 50, 80, 0.53);
+    color: ${colors.green};
+  }
 
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 16px;

@@ -64,6 +64,13 @@ const PointsItem = styled.div`
   margin: 16px;
   border-radius: 8px;
   width: 250px;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 7px 1px rgba(41, 50, 80, 0.53);
+  box-shadow: 5px 5px 7px 1px rgba(41, 50, 80, 0.53);
+  :hover {
+    -webkit-box-shadow: 5px 5px 7px 1px #293250;
+    box-shadow: 5px 5px 7px 1px #293250;
+  }
 `;
 
 const PointsImage = styled.img`
@@ -79,12 +86,14 @@ const PointsInfo = styled.div`
 const PointsText = styled.p`
   margin: 0;
   font-size: 12px;
+  color: ${colors.blue};
 `;
 
 const PointsValue = styled.h6`
   font-size: 18px;
   font-weight: bolder;
   margin: 0;
+  color: ${colors.blue};
 `;
 
 const SmallPrint = styled.p`

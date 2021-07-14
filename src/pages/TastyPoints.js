@@ -13,7 +13,7 @@ import styled from "styled-components";
 import PizzaImage from "../assets/images/pizza.png";
 import Underline from "../assets/images/UnderLine.svg";
 
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/LogoSvg.svg";
 import { colors, breakpoints } from "../helpers/globals";
 import { TastyPointsHowTo } from "../components/TastyPointsHowTo";
 import { TastyFooter } from "../components/TastyFooter";

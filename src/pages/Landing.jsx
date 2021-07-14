@@ -156,6 +156,10 @@ const SignupButton = styled.button`
   font-size: 24px;
   padding-bottom: 10px;
   text-decoration: underline;
+
+  :hover {
+    color: ${colors.yellow};
+  }
   :focus {
     outline: none;
   }
@@ -188,6 +192,9 @@ const NavLink = styled(Link)`
   color: ${colors.yellow};
   font-weight: 800;
   padding: 10px;
+  :hover {
+    color: ${colors.green};
+  }
 `;
 
 const SocialBlock = styled.p`
@@ -203,6 +210,9 @@ const SocialBlock = styled.p`
 const SocialLink = styled.a`
   color: ${colors.yellow};
   margin: 0;
+  :hover {
+    color: ${colors.green};
+  }
 `;
 
 const Row = styled.div`
