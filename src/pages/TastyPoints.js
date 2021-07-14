@@ -58,7 +58,7 @@ export const TastyPoints = () => {
               </WordWithUndelineWithMargin>
               an account
             </HeaderMid>
-            <Copy>and join the rewards point scheme</Copy>
+            <Copy>We will auto opt you into the reward scheme</Copy>
           </Group>
           <Group>
             <Number>2</Number>
